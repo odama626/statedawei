@@ -1,0 +1,45 @@
+{
+  "name": "statedawei",
+  "version": "0.1.0",
+  "description": "",
+  "source": "src/index.ts",
+  "main": "dist/index.js",
+  "module": "dist/index.module.js",
+  "unpkg": "dist/index.umd.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "microbundle build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "prepublishOnly": "npm run test -- --watchAll=false; npm run build"
+  },
+  "author": "",
+  "license": "ISC",
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "prettier": {
+    "singleQuote": true,
+    "arrowParens": "avoid",
+    "printWidth": 100
+  },
+  "peerDependencies": {
+    "dawei": "^0.7.1",
+    "react": "^16.13.1 || ^17.0.0"
+  },
+  "devDependencies": {
+    "@testing-library/react": "^11.2.6",
+    "@testing-library/react-hooks": "^5.1.2",
+    "@types/react": "^17.0.3",
+    "dawei": "^0.7.1",
+    "microbundle": "^0.13.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "^4.0.3",
+    "react-test-renderer": "^17.0.2",
+    "typescript": "^4.2.4"
+  }
+}
